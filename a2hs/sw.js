@@ -3,7 +3,9 @@ self.addEventListener('install', function(e) {
 
    caches.keys().then( keys => {
      keys.forEach( cacheName => {
-       caches.delete(cacheName)
+       return new Promise((resolve, reject) => {
+         caches.delete(cacheName)
+       })
      })
    })
 

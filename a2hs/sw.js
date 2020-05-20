@@ -1,5 +1,12 @@
 self.addEventListener('install', function(e) {
  e.waitUntil(
+
+   caches.keys().then( keys => {
+     keys.forEach( cacheName => {
+       caches.delete(cacheName)
+     })
+   })
+
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
        '/sw-test/a2hs/',

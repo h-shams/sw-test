@@ -8,8 +8,8 @@ function log(str) {
 log(caches)
 
 caches.open('some-cache').then(cache => {
-  cache.add('/a2hs')
-  log('/a2hs is cached')
+  cache.add('/pwa-examples/a2hs')
+  log('/pwa-examples/a2hs is cached')
 })
 
 function randomValueFromArray(array) {
@@ -19,14 +19,14 @@ function randomValueFromArray(array) {
 
 setInterval(function() {
   let randomChoice = randomValueFromArray(images);
-  imgElem.src = '/a2hs/images/' + randomChoice + '.jpg';
+  imgElem.src = '/pwa-examples/a2hs/images/' + randomChoice + '.jpg';
 }, 2000)
 
 // Register service worker to control making site work offline
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/a2hs/sw.js')
+           .register('/pwa-examples/a2hs/sw.js')
            .then(function() {
               console.log('Service Worker Registered');
               log('Service Worker Registered')

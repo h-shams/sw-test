@@ -10,6 +10,6 @@
     }
   ],
   "name": "Awesome fox pictures",
-  "short_name": "Foxes",
-  "start_url": "/pwa-examples/a2hs/index.html"
+  "short_name": "my Foxes",
+  "start_url": "/sw-test/a2hs/index.html"
 }

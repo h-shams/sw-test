@@ -1,5 +1,7 @@
 # PWA Examples
 
+NOW using SSH :D
+
 Examples for progressive web apps.
 
 In this repo, we currently have:

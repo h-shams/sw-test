@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
 	  "start": "browser-sync start -s './'",
+	  "build": "echo 'this is fun :D'",
     "help": "browser-sync start --help"
   },
   "devDependencies": {
